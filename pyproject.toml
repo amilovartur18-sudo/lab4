@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lab4-algorithms"
+version = "1.0.0"
+description = "Лабораторная работа 4: алгоритмический мини-пакет"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+lab4-benchmark = "lab4_algorithms.benchmark:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
